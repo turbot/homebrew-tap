@@ -9,7 +9,7 @@ class Steampipe < Formula
 
   if OS.mac?
     url "https://github.com/turbot/steampipe/releases/download/v0.2.0/steampipe_darwin_amd64.zip"
-    sha256 "fe2eabe82fd60d23798fc5137ceeca11db69974bd600bcacb25c4694188935b7"
+    sha256 "f503bc50ff7bcb4ca6b010cdb1b67580559b2b33067fac61a4327dca044e31c4"
   end
 
   def install
