@@ -4,7 +4,7 @@
 class Steampipe < Formula
   desc "Steampipe exposes APIs and services as a high-performance relational database, giving you the ability to write SQL-based queries to explore, assess and report on dynamic data."
   homepage "https://https://steampipe.io/"
-  version "0.2.3"
+  version "0.2.4"
   bottle :unneeded
 
   if OS.mac?
