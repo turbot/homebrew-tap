@@ -8,8 +8,8 @@ class Steampipe < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/turbot/steampipe/releases/download/v0.4.0/steampipe_darwin_amd64.zip"
-    sha256 "a3697477fa82d947eab30ecfeebbc067f82e3bbda8f26a02aeb516e18320e4c4"
+    url "https://github.com/turbot/steampipe/releases/download/v0.4.1/steampipe_darwin_amd64.zip"
+    sha256 "497f5bab69e0f6567cdd52ba1ec0fecc459c8cd7ca3bd60c38ca3963c15a009c"
   end
 
   def install
