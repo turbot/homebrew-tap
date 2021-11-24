@@ -8,11 +8,11 @@ class Steampipe < Formula
 
   if OS.mac?
     url "https://github.com/turbot/steampipe/releases/download/v0.10.0/steampipe_darwin_amd64.zip"
-    sha256 "3941232c365c76b0b75080b7c40cbccdd6fc4678a1f2ccb123797fb8aae715c4"
+    sha256 "3d28a311351c46ed2b6c98bd6681959d81aed472e81de254c942ac45b719c403"
   end
   if OS.linux?
     url "https://github.com/turbot/steampipe/releases/download/v0.10.0/steampipe_linux_amd64.tar.gz"
-    sha256 "692889cc226dae2eb4687bca850374cfa2dd79814fba2f529242d0d48fe8b9fd"
+    sha256 "76fd1017e883252ccacab64b1e5d0b38567fd5d3affd3b46d64a039e5dd40dcb"
   end
 
   def install
