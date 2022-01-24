@@ -1,4 +1,4 @@
-5# typed: false
+# typed: false
 # frozen_string_literal: true
 
 class Steampipe < Formula
