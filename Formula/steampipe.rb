@@ -4,15 +4,15 @@
 class Steampipe < Formula
   desc "Steampipe exposes APIs and services as a high-performance relational database, giving you the ability to write SQL-based queries to explore, assess and report on dynamic data."
   homepage "https://steampipe.io/"
-  version "0.13.4"
+  version "0.13.5"
 
   if OS.mac?
-    url "https://github.com/turbot/steampipe/releases/download/v0.13.4/steampipe_darwin_amd64.zip"
-    sha256 "c9b63f1645a3497fb91d1d12d4b88a21264b7e386d095a403a149877da4f4b81"
+    url "https://github.com/turbot/steampipe/releases/download/v0.13.5/steampipe_darwin_amd64.zip"
+    sha256 "f7cd0c27a09fc02db3a4d8d878e86c63682fcebd5da32c594128f51d67ac338d"
   end
   if OS.linux?
-    url "https://github.com/turbot/steampipe/releases/download/v0.13.4/steampipe_linux_amd64.tar.gz"
-    sha256 "fb9cc435e3e54fcd9ba38c7d497888d5e1c02bdf07315a911b6d832a8d4657be"
+    url "https://github.com/turbot/steampipe/releases/download/v0.13.5/steampipe_linux_amd64.tar.gz"
+    sha256 "2c4a2470238a3b308fdd332771380403a9ac8cb33781b61bd466d6d8cd31caf0"
   end
 
   def install
