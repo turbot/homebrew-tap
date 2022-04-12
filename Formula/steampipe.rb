@@ -12,7 +12,7 @@ class Steampipe < Formula
   end
   if OS.linux?
     url "https://github.com/turbot/steampipe/releases/download/v0.13.5/steampipe_linux_amd64.tar.gz"
-    sha256 "2c4a2470238a3b308fdd332771380403a9ac8cb33781b61bd466d6d8cd31caf0"
+    sha256 "2d6835823adc4f4ee3dd20aff3aff4c3d07dc5eb2d5671a76c2df6ce5110a434"
   end
 
   def install
