@@ -4,23 +4,23 @@
 class Steampipe < Formula
   desc "Steampipe exposes APIs and services as a high-performance relational database, giving you the ability to write SQL-based queries to explore, assess and report on dynamic data."
   homepage "https://steampipe.io/"
-  version "0.15.0"
+  version "0.15.1"
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/turbot/steampipe/releases/download/v0.15.0/steampipe_darwin_amd64.zip"
-    sha256 "4a1ffd7c9b94b180c217bba1bce9556514bdbfb1466f07fa3a15aeb16a97e63c"
+    sha256 "67fb069b9dab1d90099dcc7198f0c468b8d7be123ab1a0fc75f9f0daacf1377b"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/turbot/steampipe/releases/download/v0.15.0/steampipe_darwin_arm64.zip"
-    sha256 "7f02f3680c29365badaee7d7a204a65420825f52d69f3e5f63a3bcf7962bccb8"
+    sha256 "4d1a7d0561f340c26c61e2678fa35ee29a1954fe9a147400559be96bb64d4015"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/turbot/steampipe/releases/download/v0.15.0/steampipe_linux_amd64.tar.gz"
-    sha256 "20089b712dda67bd18a007a55e4b9b95372c849573f77c59b3f7bdfcef871d8b"
+    sha256 "9cb32c6f1f26a23b0a81829ccbc9a37522f9c7f05fd98e30c08d9729e43fc4d1"
   end
   if OS.linux? && Hardware::CPU.arm?
     url "https://github.com/turbot/steampipe/releases/download/v0.15.0/steampipe_linux_arm64.tar.gz"
-    sha256 "75a2a5899401ad0707ba81e1f4bbbd9f7aebaaf6d566d93298c00dff81515904"
+    sha256 "f28fa7105480401801f833e81852e95dba92c90403ec8be28ef254e9767b655f"
   end
 
   def install
