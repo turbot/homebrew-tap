@@ -47,7 +47,7 @@ brew_old_version="$(echo "$old_version" | sed 's/\.//g')"
 echo "all good till here 1"
 
 # Add versions to file
-sed  -i '' 's/class Steampipe </'"class SteampipeAT$brew_old_version"' </' "$old_file"
+sed  -i 's/class Steampipe </'"class SteampipeAT$brew_old_version"' </' "$old_file"
 
 echo "all good till here 2"
 # Upated new version to current live
@@ -59,7 +59,7 @@ mv "$new_file" "$base_file"
 brew_new_version="$(echo "$NEW_VERSION" | sed 's/\.//g')"
 
 # Remove versions from file
-sed  -i '' 's/'"class SteampipeAT$brew_new_version <"'/class Steampipe </' "$base_file"
+sed  -i 's/'"class SteampipeAT$brew_new_version <"'/class Steampipe </' "$base_file"
 
 # Create symlink
 cd Aliases && ln -s "../$base_file" "steampipe@$NEW_VERSION"
