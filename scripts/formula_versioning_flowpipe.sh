@@ -29,4 +29,4 @@ cp "$new_file" "$base_file"
 brew_new_version="$(echo "$NEW_VERSION" | sed 's/\.//g')"
 
 # Remove versions in class name from base file
-sed  -i 's/'"class FlowpipeAT$brew_new_version <"'/class flowpipe </' "$base_file"
+sed  -i 's/'"class FlowpipeAT$brew_new_version <"'/class Flowpipe </' "$base_file"
