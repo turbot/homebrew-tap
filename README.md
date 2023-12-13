@@ -28,6 +28,7 @@ While you may search across taps, it is necessary to always use fully qualified 
 Package | Install
 |-|-
 | [steampipe](https://steampipe.io/) | `brew install turbot/tap/steampipe`
+| [flowpipe](https://flowpipe.io/) | `brew install turbot/tap/flowpipe`
 
 ## Open Source & Contributing
 
