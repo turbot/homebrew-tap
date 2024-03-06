@@ -29,6 +29,7 @@ Package | Install
 |-|-
 | [steampipe](https://steampipe.io/) | `brew install turbot/tap/steampipe`
 | [flowpipe](https://flowpipe.io/) | `brew install turbot/tap/flowpipe`
+| [powerpipe](https://powerpipe.io) | `brew install turbot/tap/powerpipe`
 
 ## Open Source & Contributing
 
