@@ -5,20 +5,20 @@
 class Flowpipe < Formula
   desc "Flowpipe is a cloud scripting engine. Automation and workflow to connect your clouds to the people, systems and data that matters."
   homepage "https://flowpipe.io/"
-  version "0.4.5"
+  version "0.4.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/turbot/flowpipe/releases/download/v0.4.5/flowpipe.darwin.arm64.tar.gz"
-      sha256 "1c17fab31a39362835ea9f48c07e1a9bddb044dbac024bc8011c2e7d21bb2e9f"
+      url "https://github.com/turbot/flowpipe/releases/download/v0.4.6/flowpipe.darwin.arm64.tar.gz"
+      sha256 "44f007d14baf1814e963a310897981421628471cd05cc516f07e134c1e9b0eb5"
 
       def install
         bin.install "flowpipe"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/turbot/flowpipe/releases/download/v0.4.5/flowpipe.darwin.amd64.tar.gz"
-      sha256 "8614765995d7898c2451b380159fdceae8ca7fce3448ac97747c48152caa04a3"
+      url "https://github.com/turbot/flowpipe/releases/download/v0.4.6/flowpipe.darwin.amd64.tar.gz"
+      sha256 "d91bbce005d521ff8e6ed2e87b9bec660c1c06ceb9d8ff364844b068310d846b"
 
       def install
         bin.install "flowpipe"
@@ -28,16 +28,16 @@ class Flowpipe < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/turbot/flowpipe/releases/download/v0.4.5/flowpipe.linux.arm64.tar.gz"
-      sha256 "7310e654ee6c4a79e82adef8d322ea8a98d92e501f91165452104544869576b1"
+      url "https://github.com/turbot/flowpipe/releases/download/v0.4.6/flowpipe.linux.arm64.tar.gz"
+      sha256 "7688e07baaccb6fc8cbf4716575be8e4bec0594431eda46c7110ebaa3e7c6399"
 
       def install
         bin.install "flowpipe"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/turbot/flowpipe/releases/download/v0.4.5/flowpipe.linux.amd64.tar.gz"
-      sha256 "6688bdd0bd468324a19ad7550359174a36d73e6f09da5291ad312ac8d46d63ae"
+      url "https://github.com/turbot/flowpipe/releases/download/v0.4.6/flowpipe.linux.amd64.tar.gz"
+      sha256 "067ae5dd3d6fc4d0033e592525aee1727f4c62899a50972949f87424784d728b"
 
       def install
         bin.install "flowpipe"
