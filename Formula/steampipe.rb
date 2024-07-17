@@ -5,20 +5,20 @@
 class Steampipe < Formula
   desc "Steampipe exposes APIs and services as a high-performance relational database, giving you the ability to write SQL-based queries to explore, assess and report on dynamic data."
   homepage "https://steampipe.io/"
-  version "0.23.2"
+  version "0.23.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/turbot/steampipe/releases/download/v0.23.2/steampipe_darwin_amd64.zip"
-      sha256 "e2da52a4046fca0ae5793fcf8db469efccc0c0b38fff1c1bef8abf2adc434802"
+      url "https://github.com/turbot/steampipe/releases/download/v0.23.3/steampipe_darwin_amd64.zip"
+      sha256 "967f1090cac6b9189f1b8c0b953b80c1c6b4353b8ed990a58bbf1cfcd41ae5aa"
 
       def install
         bin.install "steampipe"
       end
     end
     on_arm do
-      url "https://github.com/turbot/steampipe/releases/download/v0.23.2/steampipe_darwin_arm64.zip"
-      sha256 "54eee69d6163f840d9a40422487462f20b75b20f513e91c6f628953166651b39"
+      url "https://github.com/turbot/steampipe/releases/download/v0.23.3/steampipe_darwin_arm64.zip"
+      sha256 "892fd935ce2b4d1c3a17c0d167b9e06e584734376514415ac8dfa20bdbcf34fb"
 
       def install
         bin.install "steampipe"
@@ -29,8 +29,8 @@ class Steampipe < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/turbot/steampipe/releases/download/v0.23.2/steampipe_linux_amd64.tar.gz"
-        sha256 "8ced74e84a4db0ac8c357e06263288133be0f6dfcdd675a4b52e3662c8a22507"
+        url "https://github.com/turbot/steampipe/releases/download/v0.23.3/steampipe_linux_amd64.tar.gz"
+        sha256 "963e54bf7a9dd0f87840678d2116bd516aeea2c8ea2e101564e55f14064deb4f"
 
         def install
           bin.install "steampipe"
@@ -39,8 +39,8 @@ class Steampipe < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/turbot/steampipe/releases/download/v0.23.2/steampipe_linux_arm64.tar.gz"
-        sha256 "fd88d993628a37698367ff5a7131d27f69947109653f185c56c725fd8a0bf0b9"
+        url "https://github.com/turbot/steampipe/releases/download/v0.23.3/steampipe_linux_arm64.tar.gz"
+        sha256 "e570c4272c7cec640b24bd5970e731ffbd28f32b07f181aa75edd5a6b093d3f4"
 
         def install
           bin.install "steampipe"
