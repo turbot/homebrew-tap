@@ -5,20 +5,20 @@
 class Flowpipe < Formula
   desc "Flowpipe is a cloud scripting engine. Automation and workflow to connect your clouds to the people, systems and data that matters."
   homepage "https://flowpipe.io/"
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/turbot/flowpipe/releases/download/v0.5.0/flowpipe.darwin.arm64.tar.gz"
-      sha256 "f988dd860efb56bd68d61f5b54a658ce6e0f723ebd1dd3b92628879b9281b318"
+    on_intel do
+      url "https://github.com/turbot/flowpipe/releases/download/v0.6.0/flowpipe.darwin.amd64.tar.gz"
+      sha256 "499bc10ee516feee84cdcce345c8e8b4c3074b3fe9d2795606c9a6c179fdc8e3"
 
       def install
         bin.install "flowpipe"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/turbot/flowpipe/releases/download/v0.5.0/flowpipe.darwin.amd64.tar.gz"
-      sha256 "e76578604828bf49dff21d146611ffe6fd24ea54bea2f6fbbeaef82572f5d329"
+    on_arm do
+      url "https://github.com/turbot/flowpipe/releases/download/v0.6.0/flowpipe.darwin.arm64.tar.gz"
+      sha256 "f0a68cb8cc417add60625a545082dbb022b439be4b19c9b9d20de6ea82312cea"
 
       def install
         bin.install "flowpipe"
@@ -27,20 +27,24 @@ class Flowpipe < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/turbot/flowpipe/releases/download/v0.5.0/flowpipe.linux.arm64.tar.gz"
-      sha256 "3b75c92b95c84c532c9e147549d2988887acfada0f6f6ec33b3f27fdc9a0d114"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/turbot/flowpipe/releases/download/v0.6.0/flowpipe.linux.amd64.tar.gz"
+        sha256 "4dca3fb8112e0b7d4e59b4831d120cd5f299a09b58e4f01069ba8ba481097960"
 
-      def install
-        bin.install "flowpipe"
+        def install
+          bin.install "flowpipe"
+        end
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/turbot/flowpipe/releases/download/v0.5.0/flowpipe.linux.amd64.tar.gz"
-      sha256 "76c96343a1b8d652d6f8a68e2ebfba18a17fa87a111da3218725c9c4e0163534"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/turbot/flowpipe/releases/download/v0.6.0/flowpipe.linux.arm64.tar.gz"
+        sha256 "8f5e1384983e2c1a49ead7807e9056fa56e4ccdf04081f08c5930dbc204cc36f"
 
-      def install
-        bin.install "flowpipe"
+        def install
+          bin.install "flowpipe"
+        end
       end
     end
   end
