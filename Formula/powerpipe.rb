@@ -5,20 +5,20 @@
 class Powerpipe < Formula
   desc "Dashboards for DevOps. Visualize cloud configurations. Assess security posture against a massive library of benchmarks. Build custom dashboards with code."
   homepage "https://powerpipe.io/"
-  version "0.4.4"
+  version "1.0.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/turbot/powerpipe/releases/download/v0.4.4/powerpipe.darwin.amd64.tar.gz"
-      sha256 "3635c953a7592e54831ddb666a8f0976095895ab5261ae3abf69a79a8ada49bd"
+      url "https://github.com/turbot/powerpipe/releases/download/v1.0.0/powerpipe.darwin.amd64.tar.gz"
+      sha256 "08bd954921d408c937905e286aee79842c3c278c77066e9ef4229346a8512380"
 
       def install
         bin.install "powerpipe"
       end
     end
     on_arm do
-      url "https://github.com/turbot/powerpipe/releases/download/v0.4.4/powerpipe.darwin.arm64.tar.gz"
-      sha256 "69050e26799a43c9fca33767d55387a3398f6a47b16706828392a580ce7f7c4a"
+      url "https://github.com/turbot/powerpipe/releases/download/v1.0.0/powerpipe.darwin.arm64.tar.gz"
+      sha256 "16b7ba5eebe1c2a26b44e908808e8b3a3b3eaa034c581e889289493795366158"
 
       def install
         bin.install "powerpipe"
@@ -29,8 +29,8 @@ class Powerpipe < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/turbot/powerpipe/releases/download/v0.4.4/powerpipe.linux.amd64.tar.gz"
-        sha256 "3cc420bdd015b11b7016cb39d08a4d53375e677e41a5898afaa676573e7e272c"
+        url "https://github.com/turbot/powerpipe/releases/download/v1.0.0/powerpipe.linux.amd64.tar.gz"
+        sha256 "6baa57a9043596fb86a7b071f62ecdde1bc29c3271ef429a5289b95493b38899"
 
         def install
           bin.install "powerpipe"
@@ -39,8 +39,8 @@ class Powerpipe < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/turbot/powerpipe/releases/download/v0.4.4/powerpipe.linux.arm64.tar.gz"
-        sha256 "5e1974db84a068843fac340da34298162bb299cf2d4c9e219db700ec7d62d4b8"
+        url "https://github.com/turbot/powerpipe/releases/download/v1.0.0/powerpipe.linux.arm64.tar.gz"
+        sha256 "8d8263267f176486b955441ba48c92dbd9fb49f0b3eb94d935af22affbaeb7a1"
 
         def install
           bin.install "powerpipe"
