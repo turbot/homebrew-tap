@@ -5,20 +5,20 @@
 class Tailpipe < Formula
   desc "Open source SIEM for instant log insights, powered by DuckDB. Analyze millions of events in seconds, right from your terminal."
   homepage "https://tailpipe.io/"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/turbot/tailpipe/releases/download/v0.3.0/tailpipe.darwin.amd64.tar.gz"
-      sha256 "426a43eee79daa6e4399e0b95b97368a2443fdcc7cde6afbeb8827be59898efb"
+      url "https://github.com/turbot/tailpipe/releases/download/v0.3.1/tailpipe.darwin.amd64.tar.gz"
+      sha256 "e0235679492a65a0655c661a694f509a5b7810ad8b96582f13c81e9114cbb700"
 
       def install
         bin.install "tailpipe"
       end
     end
     on_arm do
-      url "https://github.com/turbot/tailpipe/releases/download/v0.3.0/tailpipe.darwin.arm64.tar.gz"
-      sha256 "11547fb1f29934bf6a49cfcb1e481b757ccdf0bfe043f18cb189a9b5af09fd18"
+      url "https://github.com/turbot/tailpipe/releases/download/v0.3.1/tailpipe.darwin.arm64.tar.gz"
+      sha256 "730d936bbabb8bd3fc4d12b415c196e6e3de665f89ea8452287b862be89cf22b"
 
       def install
         bin.install "tailpipe"
@@ -29,8 +29,8 @@ class Tailpipe < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/turbot/tailpipe/releases/download/v0.3.0/tailpipe.linux.amd64.tar.gz"
-        sha256 "ce458d75cad290886d2d98411034d9bd7eaa4eed440fc342c31dab2fb3d93b0c"
+        url "https://github.com/turbot/tailpipe/releases/download/v0.3.1/tailpipe.linux.amd64.tar.gz"
+        sha256 "57160247cc58d46fe5255a226b1e7f17e2fa9b6f68a3ade43dace60e87037463"
 
         def install
           bin.install "tailpipe"
@@ -39,8 +39,8 @@ class Tailpipe < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/turbot/tailpipe/releases/download/v0.3.0/tailpipe.linux.arm64.tar.gz"
-        sha256 "a31c95b44fdfbe526455b5ff21b7dfeef46f97879b309e4c9c232e6392372770"
+        url "https://github.com/turbot/tailpipe/releases/download/v0.3.1/tailpipe.linux.arm64.tar.gz"
+        sha256 "5df177f40460548d3f936bec18d762453a0cc5818240b6b9e2a900b6af5fe279"
 
         def install
           bin.install "tailpipe"
