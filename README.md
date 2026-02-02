@@ -31,6 +31,7 @@ Package | Install
 | [flowpipe](https://flowpipe.io/) | `brew install turbot/tap/flowpipe`
 | [powerpipe](https://powerpipe.io) | `brew install turbot/tap/powerpipe`
 | [tailpipe](https://tailpipe.io) | `brew install turbot/tap/tailpipe`
+| [guardrails-cli](https://turbot.com/guardrails/docs/reference/cli) | `brew install turbot/tap/guardrails-cli`
 
 ## Open Source & Contributing
 
