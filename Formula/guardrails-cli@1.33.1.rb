@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class GuardrailsCli < Formula
+class GuardrailsCliAT1331 < Formula
   desc "Command line tooling for Turbot Guardrails - used by developers to write scripts and create mods"
   homepage "https://turbot.com/guardrails/docs/reference/cli"
   version "1.33.1"
