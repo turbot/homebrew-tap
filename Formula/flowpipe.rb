@@ -5,20 +5,20 @@
 class Flowpipe < Formula
   desc "Flowpipe is a cloud scripting engine. Automation and workflow to connect your clouds to the people, systems and data that matters."
   homepage "https://flowpipe.io/"
-  version "1.2.3"
+  version "1.2.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/turbot/flowpipe/releases/download/v1.2.3/flowpipe.darwin.amd64.tar.gz"
-      sha256 "6e411870bf8076005c7a3645b5a18c0b8c6dec524b464910a94ee79493241711"
+      url "https://github.com/turbot/flowpipe/releases/download/v1.2.4/flowpipe.darwin.amd64.tar.gz"
+      sha256 "8fe85edd1c69201d3f49f5508eb7127f393e68d8856d8d460aeb717188c556f8"
 
       def install
         bin.install "flowpipe"
       end
     end
     on_arm do
-      url "https://github.com/turbot/flowpipe/releases/download/v1.2.3/flowpipe.darwin.arm64.tar.gz"
-      sha256 "6a274a6338095866b972df854b925f8fca24fa9bc544b6da3d71fabbc82b9220"
+      url "https://github.com/turbot/flowpipe/releases/download/v1.2.4/flowpipe.darwin.arm64.tar.gz"
+      sha256 "9f1a5cedb6f9641930a5414e1ae9dabff885279cb5213fa8d53cea2d82774754"
 
       def install
         bin.install "flowpipe"
@@ -29,8 +29,8 @@ class Flowpipe < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/turbot/flowpipe/releases/download/v1.2.3/flowpipe.linux.amd64.tar.gz"
-        sha256 "5c61fc7cee2eae4a41eac1f24f3008b17af6cf3d57a466228c8c3dbe88ce8480"
+        url "https://github.com/turbot/flowpipe/releases/download/v1.2.4/flowpipe.linux.amd64.tar.gz"
+        sha256 "f553fc0f9b019c5de8cffa7dcc4c8b2a0fea73708e66afac925a6c2a92b98334"
 
         def install
           bin.install "flowpipe"
@@ -39,8 +39,8 @@ class Flowpipe < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/turbot/flowpipe/releases/download/v1.2.3/flowpipe.linux.arm64.tar.gz"
-        sha256 "5c8752dde9f4bbafa16c983429536c26376c1897d341198c1007658ab33c76ab"
+        url "https://github.com/turbot/flowpipe/releases/download/v1.2.4/flowpipe.linux.arm64.tar.gz"
+        sha256 "09c76600c4558f7b2a9b5f608d5d49d0fafb5f91262bc3b5e46ab6348f9634be"
 
         def install
           bin.install "flowpipe"
