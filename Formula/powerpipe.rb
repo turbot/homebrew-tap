@@ -5,28 +5,28 @@
 class Powerpipe < Formula
   desc "Dashboards for DevOps. Visualize cloud configurations. Assess security posture against a massive library of benchmarks. Build custom dashboards with code."
   homepage "https://powerpipe.io/"
-  version "1.8.1"
+  version "1.9.0"
   license "AGPL-3.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/turbot/powerpipe/releases/download/v1.8.1/powerpipe.darwin.arm64.tar.gz"
-      sha256 "1d336d31901115a5cb88562996a2b9926eef8fea38a4a1d83497adcdf09f6625"
+      url "https://github.com/turbot/powerpipe/releases/download/v1.9.0/powerpipe.darwin.arm64.tar.gz"
+      sha256 "487030ae7def4856bb6a865a2426468f6028f97ec9887bee1e2e70197c0580dd"
     end
     on_intel do
-      url "https://github.com/turbot/powerpipe/releases/download/v1.8.1/powerpipe.darwin.amd64.tar.gz"
-      sha256 "dffe8f61b842267f4b4e2e82a4a4259fdcd85e07be167370b8591383a191246c"
+      url "https://github.com/turbot/powerpipe/releases/download/v1.9.0/powerpipe.darwin.amd64.tar.gz"
+      sha256 "bf6995f914e1b9e48231be1758277186338bd9954289d05fece22c6d7b69e27c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/turbot/powerpipe/releases/download/v1.8.1/powerpipe.linux.arm64.tar.gz"
-      sha256 "6ce4e9cd4461fdc191e48eba227a0974ff90076d1b06b47b8b80f992adbb7334"
+      url "https://github.com/turbot/powerpipe/releases/download/v1.9.0/powerpipe.linux.arm64.tar.gz"
+      sha256 "719315313aa47c83b77d449fd52b4eeb33d66fccac673f712dbd4003563ddf26"
     end
     on_intel do
-      url "https://github.com/turbot/powerpipe/releases/download/v1.8.1/powerpipe.linux.amd64.tar.gz"
-      sha256 "d24a4e9dfcb9677a415441d89065d06a9cbeb24f44a1e0664ea37798366b1ba0"
+      url "https://github.com/turbot/powerpipe/releases/download/v1.9.0/powerpipe.linux.amd64.tar.gz"
+      sha256 "46a9be507d3fa648aa3fd874493b90299a4d91cc8ef3ca3b91a4ec63f21b9343"
     end
   end
 
